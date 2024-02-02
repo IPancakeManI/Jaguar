@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/tr1.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <title>Наши контакты</title>
+  </head>
+  <body>
+    <section class="menu">
+      <a class="logo_menu__background" href="index.html"
+        ><div class="logo_menu"></div
+      ></a>
+      <div class="menu_sections">
+        <a class="menu_section" href="history.html"><nav>история</nav></a>
+        <a class="menu_section" href="models.html"><nav>модели</nav></a>
+        <a class="menu_section active" href="contacts.html"><nav>контакты</nav></a>
+      </div>
+    </section>
+
+    <section class="contacts_page">
+      <div class="models">
+        <h2>
+          Наши контакты
+        </h2>
+        <p class="contacts_page_text">
+          Телефоны горячей линии: <br />
+          8-800-200-80-81 <br />
+          8-800-200-80-82
+        </p>
+        <p>
+          Адрес электронной почты: <br />
+          info@imperia-jaguar.ru
+        </p>
+      </div>
+
+      <div class="form">
+        <h3 class="form_header">
+          <legend>
+            <strong
+              >Остались вопросы? Хотите отставить отзыв или нашли опечатку?
+              Заполните форму ниже:</strong
+            >
+          </legend>
+        </h3>
+        <form
+          action="http://185.182.111.214:7628/cgi-bin/form_action.py"
+          method="get"
+          target="_self"
+        >
+          <p class="form_text">Ваше ФИО</p>
+          <input class="form_input" type="text" name="username" value="ФИО" />
+          <p class="form_text">Адрес электронной почты</p>
+          <input class="form_input" type="text" name="mail" value="email" />
+          <p class="form_text">Ваш вопрос:</p>
+          <input class="form_input" type="text" name="question" value="текст" />
+          <p class="form_text form_text_bold">
+            <strong>Мы обязательно с Вами свяжемся!</strong>
+          </p>
+          <button class="button" type="submit" name="submit">
+            Отправить
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <div class="futor">
+      <h3>
+        <a
+          class="futor_link"
+          href="https://www.jaguar.ru/index.html"
+          target="_blank"
+          >JAGUAR 2022</a
+        >
+      </h3>
+      <h3>MATVEY POLETAEV</h3>
+    </div>
+  </body>
+</html>

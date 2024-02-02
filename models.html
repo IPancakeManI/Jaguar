@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/tr1.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <title>Модельный ряд</title>
+  </head>
+  <body>
+    <section class="menu">
+      <a class="logo_menu__background" href="index.html"
+        ><div class="logo_menu"></div
+      ></a>
+      <div class="menu_sections">
+        <a class="menu_section" href="history.html"><nav>история</nav></a>
+        <a class="menu_section active" href="models.html"><nav>модели</nav></a>
+        <a class="menu_section" href="contacts.html"><nav>контакты</nav></a>
+      </div>
+    </section>
+
+    <section class="models_page">
+      <div class="models">
+        <h2>
+          Модельный ряд бренда Jaguar:
+        </h2>
+
+        <ul class="modelslist">
+          <li>
+            Бизнес класс
+            <ul>
+              <li>JAGUAR XF</li>
+              <li>JAGUAR XF Sportbrake</li>
+              <li>JAGUAR XE</li>
+            </ul>
+          </li>
+          <li>
+            Внедорожники
+            <ul>
+              <li>JAGUAR E-Pace</li>
+              <li>JAGUAR F-Pace</li>
+              <li>JAGUAR F-Pace SVR</li>
+              <li>JAGUAR I-Pace</li>
+            </ul>
+          </li>
+          <li>
+            Купе и кабриолеты
+            <ul>
+              <li>JAGUAR F-type купе</li>
+              <li>JAGUAR F-type родстер</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <table>
+        <caption>
+          <h3 class="table_header">Данные по популярным моделям</h3>
+        </caption>
+        <tr>
+          <th>&nbsp;</th>
+          <th>Привод</th>
+          <th>Мощность</th>
+          <th>Топливо</th>
+          <th>Фото</th>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://www.jaguar.ru/jaguar-range/xf/index.html"
+              >JAGUAR XF</a
+            >
+          </td>
+          <td>Задний</td>
+          <td>199 л.с.</td>
+          <td>Дизель</td>
+          <td><img src="./img/XF.jpg" alt="" class="tableImg" /></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://www.jaguar.ru/jaguar-range/e-pace/index.html"
+              >JAGUAR E-Pace</a
+            >
+          </td>
+          <td>Полный</td>
+          <td>249 л.с.</td>
+          <td>Бензин</td>
+          <td><img src="./img/Epeace.jpg" alt="" class="tableImg" /></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://www.jaguar.ru/jaguar-range/f-type/index.html"
+              >JAGUAR F-type купе</a
+            >
+          </td>
+          <td>Полный</td>
+          <td>380</td>
+          <td>бензин</td>
+          <td width="260px">
+            <img src="./img/купе.jpg" alt="" class="tableImg" />
+          </td>
+        </tr>
+      </table>
+    </section>
+
+    <section class="contacts_page">
+      <div class="models">
+        <h2>
+          Подсчитайте стоимость Ваших Jaguar!
+        </h2>
+        
+      </div>
+
+      <div class="form">
+        <h3 class="form_header">
+          <legend>
+            <strong
+              >Укажите в форме ниже стоимость двух Ваших автомобилей и получите их суммарную стоимость!</strong
+            >
+          </legend>
+        </h3>
+        <form
+          action="http://185.182.111.214:7628/cgi-bin/form_action.py"
+          method="get"
+          target="_self"
+        >
+          <p class="form_text">Стоимость первого автомобиля</p>
+          <input class="form_input" type="text" id="num1" name="first_car_cost"  />
+          <p class="form_text">Стоимость второго автомобиля</p>
+          <input class="form_input" id="num2" type="text" name="second_car_cost"  />
+          <p id="result" class="form_text form_text_bold">
+            
+          </p>
+          <button class="button" onclick="func()" id="btn" type="button" name="submit">
+            Узнать стоимость
+          </button>
+          <button class="button" type="submit" name="submit">
+            Поделиться
+          </button>
+        </form>
+      </div>
+    </section>
+
+    
+    <script>
+        function func(){
+              var num1 = Number(document.getElementById("num1").value);
+              var num2 = Number(document.getElementById("num2").value);
+              var result = num1 + num2;
+    
+              document.getElementById("result").innerHTML = result;
+              }
+     </script>
+
+    <div class="futor">
+      <h3>
+        <a
+          class="futor_link"
+          href="https://www.jaguar.ru/index.html"
+          target="_blank"
+          >JAGUAR 2022</a
+        >
+      </h3>
+      <h3>MATVEY POLETAEV</h3>
+    </div>
+  </body>
+</html>
